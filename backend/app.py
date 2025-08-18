@@ -6,7 +6,7 @@ GEMINI_API_KEY = "r1e2b3e4c5c6a7"
 
 @app.route('/chat', methods=['POST'])
 def chat():
-    user_message = request.json.get("message")
+    user_message = request.json.get("message")      
     if not user_message:
         return jsonify({"error": "Message is required"}), 400
 
