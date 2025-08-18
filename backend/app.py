@@ -4,7 +4,7 @@ import requests
 app = Flask(__name__)
 GEMINI_API_KEY = "r1e2b3e4c5c6a7"
 
-@app.route('/chat', methods=['POST'])
+@app.route('/chat', methods=['POST'])               
 def chat():
     user_message = request.json.get("message")      
     if not user_message:
